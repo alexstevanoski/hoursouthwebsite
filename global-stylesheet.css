@@ -1,7 +1,26 @@
+:root
+{
+    --text: #fef9ec;
+    --background: #00131a;
+    --primary: #00ffc8;
+    --secondary: #01394c;
+    --accent: #57c8d1;
+
+}
+
 body{
-    background-color: #002E3B;
+    background-color: var(--background);
 }
 
 h1{
-    color: #FFFFFF;
+    color: var(--text);
+}
+
+p
+{
+    color: var(--text)
+}
+.heading
+{
+    text-align: center;
 }
