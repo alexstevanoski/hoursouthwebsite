@@ -6,10 +6,46 @@
         <link rel="stylesheet" href="global-stylesheet.css">
     </head>
     <body>
-        <div class="heading">
-            <h1>Hour South</h1>
-            <a href="https://github.com/alexstevanoski/hoursouthwebsite.git"><p>Visit the Github Repo </p></a>
-            <p>Testing pull request through experimental branch</p>
+        <div id="myTopnav" class="topnav"></div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+          <div id="main">
+            <div class="heading">
+                <h1 onclick="openNav()">HOUR SOUTH</h1>
+                <a href="https://github.com/alexstevanoski/hoursouthwebsite.git"><p>Visit the Github Repo </p></a>
+            </div>
         </div>
+        <div id="myBottomnav" class="bottomnav"></div>
     </body>
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "400px";
+        document.getElementById('myTopnav').style.height = "125px";
+        document.getElementById('myBottomnav').style.height = "125px";
+        document.getElementById("main").style.marginLeft = "400px";
+        document.getElementById("main").style.marginTop = "125px";
+        document.getElementById("main").style.marginBottom = "125px";
+        document.getElementById("main").style.borderRadius = "25px";
+        }
+  
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("myTopnav").style.height = "0";
+        document.getElementById('myBottomnav').style.height = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("main").style.marginTop = "0";
+        document.getElementById("main").style.marginBottom = "0";
+        document.getElementById("main").style.borderRadius = "0";
+        }
+    </script>
 </html>
