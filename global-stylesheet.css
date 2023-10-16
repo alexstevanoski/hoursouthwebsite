@@ -13,71 +13,82 @@
 body {
     font-family: 'Open Sans';
     font-weight: 400;
-    background-color: var(--secondary);
+    background-color: var(--background);
   }
   
-  h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
     font-family: 'Futura Now Headline';
     font-weight: 900;
   }
   
-  html {font-size: 100%;} /* 16px */
+html {font-size: 100%;} /* 16px */
   
-  h1 {font-size: 4.210rem; /* 67.36px */ color: var(--text);}
+h1 {font-size: 4.210rem; /* 67.36px */ color: var(--text);}
   
   
-  h2 {font-size: 3.158rem; /* 50.56px */}
+h2 {font-size: 3.158rem; /* 50.56px */}
   
-  h3 {font-size: 2.369rem; /* 37.92px */ color: var(--text);}
+h3 {font-size: 2.369rem; /* 37.92px */ color: var(--text);}
   
-  h4 {font-size: 1.777rem; /* 28.48px */}
+h4 {font-size: 1.777rem; /* 28.48px */}
   
-  h5 {font-size: 1.333rem; /* 21.28px */}
+h5 {font-size: 1.333rem; /* 21.28px */}
   
-  p {font-size: 0.750rem; /* 12px */ color: var(--text)}
+p {font-size: 0.750rem; /* 12px */ color: var(--text)}
 .heading
 {
     text-align: center;
 }
 
 /* The side navigation menu */
-.sidenav {
+.topnav {
+    height: 0; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: var(--secondary); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+.leftnav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: var(--accent); /* Black*/
+    background-color: var(--secondary); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
   }
-  .topnav {
-    height: 0; /* 100% Full-height */
-    width: 100%; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: var(--accent); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  .bottomnav {
+.bottomnav {
     height: 0; /* 100% Full-height */
     width: 100%; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     bottom: 0;
     left: 0;
-    background-color: var(--accent); /* Black*/
+    background-color: var(--secondary); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
-  }
+}
+.rightnav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: var(--secondary); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
+}
   
   /* The navigation menu links */
-  .sidenav a {
+.topnav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -87,12 +98,12 @@ body {
   }
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
+.topnav a:hover {
     color: #f1f1f1;
   }
   
   /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
+.topnav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -101,12 +112,12 @@ body {
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
+#main {
     transition: margin 1s;
     padding: 20px;
     border-radius: 0px;
     background-color: var(--background);
-  }
+}
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
