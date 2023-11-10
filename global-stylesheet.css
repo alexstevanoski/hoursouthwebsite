@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open Sans:400');
-
 :root
 {
     --text: #e4f4fb;
@@ -9,11 +8,11 @@
     --accent: #26a7df;    
 
 }
-
 body {
     font-family: 'Open Sans';
     font-weight: 400;
     background-color: var(--background);
+
   }
   
 h1, h2, h3, h4, h5 {
