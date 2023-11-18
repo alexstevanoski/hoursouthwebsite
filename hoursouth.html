@@ -1,58 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>E-commerce site</title>
-        <link rel="stylesheet" href="global-stylesheet.css">
+        <meta charset="UTF-8">
+        <title>Hour South</title>
+        <!-- Global stylesheets -->
+        <link rel="stylesheet" href="CSS/global-stylesheet.css">
+        <link rel="stylesheet" href="CSS/Topnav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Page-specific stylesheets -->
+        <link rel="stylesheet" href="CSS/hoursouth.css">
+        
     </head>
     <body>
-        <div id="myLeftnav" class="leftnav"></div>
-        <div id="myTopnav" class="topnav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <a href="#">PORTFOLIO</a> <a href="#">CONTACT</a> <a href="#">ABOUT</a> <a href="#">SEARCH</a>
+        <div class="main" id="main">
+            <h1 class="main" id="heading">HOUR SOUTH</h1>
+            <div class="topnav" id="myTopnav">
+                <a href="#portfolio" class="active">PORTFOLIO</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+              </div>
         </div>
-
-
-          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        <div id="main">
-        <div class="heading">
-            <h1 onclick="openNav()">HOUR SOUTH</h1>
-            <a href="https://github.com/alexstevanoski/hoursouthwebsite.git"><p>Visit the Github Repo </p></a>
-        </div>
-        </div>
-
-
-        <div id="myRightnav" class="rightnav"></div>
-        <div id="myBottomnav" class="bottomnav"></div>
     </body>
     <script>
-        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-        function openNav() {
-        document.getElementById('myTopnav').style.height = "14vh";
-        document.getElementById("main").style.marginTop = "14vh";
 
-        document.getElementById("myLeftnav").style.width = "7vh";
-        document.getElementById("main").style.marginLeft = "7vh";
-
-        document.getElementById('myRightnav').style.width = "7vh";
-        document.getElementById("main").style.marginRight = "7vh";
-        
-        //document.getElementById("main").style.marginBottom = "2vh";
-        //document.getElementById('myBottomnav').style.height = "2vh";
-        }
-  
-        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-        function closeNav() {
-        document.getElementById('myTopnav').style.height = "0";
-        document.getElementById("main").style.marginTop = "0";
-
-        document.getElementById("myLeftnav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-
-        document.getElementById('myRightnav').style.width = "0";
-        document.getElementById("main").style.marginRight = "0";
-        
-        document.getElementById("main").style.marginBottom = "0";
-        document.getElementById('myBottomnav').style.height = "0";
-        }
     </script>
 </html>
