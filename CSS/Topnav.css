@@ -9,7 +9,7 @@
   /* Style the links inside the navigation bar */
   .topnav a {
     display: inline-block;
-    color: #f2f2f2;
+    color: var(--text);
     text-align: center;
     padding: 14px 50px;
     text-decoration: none;
@@ -18,14 +18,14 @@
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: var(--accent);
     color: black;
   }
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: var(--primary);
+    color: var(--text);
   }
   
   /* Hide the link that should open and close the topnav on small screens */
