@@ -16,16 +16,18 @@
     margin-top: 7vh;
 }
 
-#VCCimage{
+.VCCimage{
     width: 100vw;
 }
-#VCCtext{
+
+.VCC{
+    position: relative;
+    text-align: center;
+}
+.centered{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-#VCC{
-    position: relative;
-    text-align: center;
+    color: var(--background);
 }
