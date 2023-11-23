@@ -16,6 +16,16 @@
     margin-top: 7vh;
 }
 
-#porsche{
+#VCCimage{
     width: 100vw;
+}
+#VCCtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#VCC{
+    position: relative;
+    text-align: center;
 }
