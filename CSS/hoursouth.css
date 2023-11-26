@@ -8,35 +8,62 @@
     margin-bottom: -15px;
 }
 
-.recent{
-    text-align: center;
-}
-
 #recent{
-    margin-top: 10vh;
+    text-align: center;
 }
 
 #recentheading{
     margin-bottom: 25px;
-}
-
-
-.VCCimage{
-    width: 100vw;
-    opacity: 0.5;
-    transform: translate(0, -30%);
-}
-
-.VCC{
-    position: relative;
     text-align: center;
-    height: 50vh;
-    overflow: hidden;
+    margin-top: 10vh;
 }
-.centered{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--text);
+
+.container {
+    scroll-snap-type: y mandatory;
 }
+
+.child{
+    scroll-snap-align: start;
+}
+
+/* VCC */
+    .VCCimage{
+        width: 100vw;
+        opacity: 0.5;
+    }
+    #VCC{
+        position: relative;
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
+        margin-left: 0;
+    }
+    .centered{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--text);
+    }
+
+/* UMK */
+    .UMKimage{
+        width: 100vw;
+        opacity: 0.5;
+        margin-left: 0;
+    }
+    #UMK{
+        position: relative;
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
+        margin-left: 0;
+    }
+    .centered{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--text);
+    }
+
