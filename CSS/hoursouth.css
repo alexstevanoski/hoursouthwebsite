@@ -30,6 +30,8 @@
     .VCCimage{
         width: 100vw;
         opacity: 0.5;
+        transition-property: all;
+        transition-duration: 3s;
     }
     #VCC{
         position: relative;

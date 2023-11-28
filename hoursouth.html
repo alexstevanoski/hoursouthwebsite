@@ -23,7 +23,7 @@
         </div>
         <h5 id="recentheading">RECENT PROJECTS</h5>
         <div class="container" id="recent">
-            <section class="child" id="VCC" onmouseover="VCChover(VCCimg);">
+            <section class="child" id="VCC" onmouseover="VCChover(VCCimg);" onmouseout="VCChoverout(VCCimg);">
                 <img class="VCCimage" id="VCCimg" src="Images/HRZ_5056.jpeg">
                 <div class="centered"><h2>VAUCLUSE CAR CLUB</h2></div>
             </section>
@@ -35,7 +35,17 @@
         <script>
             function VCChover(img) {
                 console.log(img);
-                img.src = "Images/HRZ_5066.jpeg";
+                img.src = "Images/HRZ_5066.jpg";
+                var image = document.getElementById("VCCimg");
+                console.log(image);
+                image.setAttribute('style', 'transform: translate(0, -40%);');
+            }
+            function VCChoverout(img) {
+                console.log(img);
+                img.src = "Images/HRZ_5056.jpeg";
+                var image = document.getElementById("VCCimg");
+                console.log(image);
+                image.setAttribute('style', 'transform: translate(0, 0);');
             }
         </script>
     </body>
