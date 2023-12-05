@@ -1,11 +1,16 @@
 #main{
-    width: 80vw;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
     margin: auto;
 }
 
 #heading{
-    margin-bottom: -15px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text);
 }
 
 #recent{
@@ -13,21 +18,25 @@
 }
 
 #recentheading{
-    margin-bottom: 25px;
     text-align: center;
-    margin-top: 10vh;
+    position: relative;
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: auto;
 }
 
 .container {
     scroll-snap-type: y proximity;
-}
-
-.container > section {
-    scroll-snap-align: start;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
 }
 
 .child{
     scroll-snap-align: start;
+    margin-left: 0;
+    padding: 0;
+    width: 100vw;
 }
 
 /* VCC */
@@ -64,12 +73,5 @@
         height: 100vh;
         overflow: hidden;
         margin-left: 0;
-    }
-    .centered{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: var(--text);
     }
 

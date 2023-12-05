@@ -1,9 +1,9 @@
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: var(--secondary);
-    margin: auto;
-    width: max-content;
+    width: 100vw;
     overflow: hidden;
+    margin-left: 0;
   }
   
   /* Style the links inside the navigation bar */
