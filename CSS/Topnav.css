@@ -2,8 +2,12 @@
 .topnav {
     background-color: var(--secondary);
     width: 100vw;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     overflow: hidden;
-    margin-left: 0;
+    position: absolute;
+    text-align: center;
   }
   
   /* Style the links inside the navigation bar */
