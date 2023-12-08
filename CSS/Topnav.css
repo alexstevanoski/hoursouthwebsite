@@ -1,13 +1,14 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: var(--secondary);
+    background-color: #010b0222;
     width: 100vw;
-    margin-top: 10px;
+    margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
     position: absolute;
     text-align: center;
+    z-index: 1;
   }
   
   /* Style the links inside the navigation bar */
